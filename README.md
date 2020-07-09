@@ -8,6 +8,7 @@ A simple responsive landing page ( desktop first ) for an anonymous company
 You can see it live [here]().
 
 #### ScreenShot : 
+![screencapture-127-0-0-1-5500-index-html-2020-07-09-14_51_40](https://user-images.githubusercontent.com/30327222/87042304-c4ba9f80-c1f3-11ea-9c7d-d4d06bd05de0.png)
 
 
 ##### Social
