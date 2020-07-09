@@ -1,0 +1,590 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height:5000px;
+}
+
+p{
+    font-size:16px;
+    line-height: 1.8rem;
+    font-family: var(--text-font);
+    color:#8989A2
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+}
+
+ul{
+    list-style: none;
+}
+:root{
+    /*fonts*/
+    --heading-font:'Playfair Display', serif;
+    --text-font:'Source Sans Pro', sans-serif;
+
+    /*colors*/
+    --light-purple:#F9F0FF;
+    --dark-purple:#722ED1;
+}
+
+/*start header*/
+.header{
+   background-color: #FFFFFF;
+    height: 800px;
+    margin-bottom: 50px;
+}
+
+.header-mask{
+    background: rgb(155,200,231);
+    background: linear-gradient(9deg, rgba(155,200,231,1) 0%, rgba(255,255,255,1) 38%);
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0%, 100% 67%, 0 100%);
+    font-family: var(--text-font);
+}
+
+.header-mask nav{
+    margin-bottom: 80px;
+}
+
+/*navbar links*/
+.navbar-light .navbar-nav .nav-link{
+    margin: 0 25px;
+}
+
+/*intro divs*/
+
+/*inreo speech*/
+.intro-speech .release-version{
+    width:50%;
+    height: 7%;
+    padding: 0 15px;
+    margin-bottom:30px;
+    border-radius:20px;
+    font-size:.9rem;
+    display: flex;
+    align-items: center;
+    color:#722ED1;
+    background-color:var(--light-purple)
+}
+
+.intro-speech .release-version i{
+    margin-right: 5px;
+}
+
+.intro-speech .release-version a{
+    margin-left: 10%;
+    color:#722ED1;
+    text-decoration: underline;
+}
+
+.intro-speech button{
+    padding: 8px 25px;
+    margin:5px;
+    border-radius: 23px;
+    font-size:14px;
+}
+
+.intro-speech h1{
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size:3.8rem
+}
+
+.intro-speech p{
+    line-height:1.8rem;
+}
+
+.intro-speech button:first-of-type{
+    background-color: var(--dark-purple);
+    color:#FFFFFF
+}
+
+.intro-speech button:last-of-type{
+    background-color: rgb(228, 226, 226);
+    color:#000
+}
+
+/*image section*/
+.intro-image img{
+    position: relative;
+}
+
+
+/*----------------------------*/
+/*start features section*/
+
+.features{
+    margin-bottom:5%;
+}
+.features .why-us{
+    padding: 2% 25%;
+    margin-bottom:5%
+}
+.features .why-us .why-qubly{
+    background-color: var(--light-purple);
+    color:var(--dark-purple);
+    padding: 10px 20px;
+    margin-bottom:2%;
+    border-radius: 20px;
+}
+
+.features .why-us h2{
+    margin:5% 2%
+}
+
+/*start the 3 features section*/
+.features .feat{
+    height: 300px;
+    text-align: left;
+}
+
+.features .feat span{
+    padding: 12px 15px;
+    margin-bottom: 5%;
+    border-radius: 50%;
+}
+.features .feat:nth-child(2) span{
+    background-color: #F6FFED;
+}
+
+
+.features .feat:nth-child(3) span{
+    background-color: #FFF1F0;
+}
+
+.features .feat:nth-child(4) span{
+    background-color: #E6F7FF;
+}
+
+.features .feat h3{
+    margin:2rem 0 3% 0;
+}
+
+.features .feat p{
+    padding-right:8%
+}
+
+/*----------------------------*/
+/*start product teams section*/
+
+.product-teams{
+    margin-bottom: 8%;
+}
+
+.product-teams img{
+    padding-left:50px
+}
+
+.product-teams .product-teams-intro{
+    padding-top:5%
+}
+
+.product-teams .product-teams-intro .product-teams-label{
+    background-color: var(--light-purple);
+    color:var(--dark-purple);
+    padding: 5px 20px;
+    border-radius: 20px;
+    display: flex;
+    width: 40%;
+}
+.product-teams .product-teams-intro .product-teams-label::before{
+    content: url(../images/svg/electronic-circuit.svg);
+    align-self: center;
+    margin-right:15px;
+}
+
+.product-teams .product-teams-intro h1{
+    margin:5% 0
+}
+
+/*----------------------------*/
+/*start engineering teams section*/
+.engineering-teams{
+    margin-bottom: 8%;
+}
+
+
+.engineering-teams .engineering-teams-intro .engineering-teams-label{
+    background-color: var(--light-purple);
+    color:var(--dark-purple);
+    padding: 5px 20px;
+    border-radius: 20px;
+    display: flex;
+    width: 60%;
+}
+.engineering-teams .engineering-teams-intro .engineering-teams-label::before{
+    content: url(../images/svg/electronic-circuit.svg);
+    align-self: center;
+    margin-right:15px;
+}
+
+
+.engineering-teams .engineering-teams-intro h1{
+    margin:5% 0
+}
+
+/*--------------------*/
+/*start testimonials section*/
+.testimonials{
+    height: auto;
+    
+}
+
+
+/*start carousel editing*/
+
+#carouselExampleFade{
+    height: 80%;
+    background-color: var(--light-purple);
+    clip-path: polygon(0 25%, 100% 8%, 100% 100%, 0 100%);
+}
+
+#carouselExampleFade .carousel-item{
+    margin-top:12%;
+    transition: all 0.5s ease;
+}
+
+/*paragraphs inside carousel*/
+#carouselExampleFade p{
+    margin:0;
+    padding:0
+}
+
+#carouselExampleFade .client-opinion{
+    margin-bottom:2%;
+    padding:0 25%;
+    font-size:25px
+}
+
+#carouselExampleFade .client-name{
+    color:#000000;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#carouselExampleFade .client-title{
+    color: #8989A2;
+}
+/*paragraphs inside carousel*/
+
+/*client image*/
+#carouselExampleFade img{
+    width: 10%;
+}
+
+
+/*start logos section*/
+
+.logos{
+    background-color: var(--light-purple);
+    clip-path: polygon(0 0, 100% 0, 100% 57%, 0 78%);
+    height: 300px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top:70px
+}
+
+.logos::before{
+    width: 50%;
+    height: 3px;
+    background-color: #FFF1F0;
+}
+
+.logos ul li{
+    display: inline-block;
+    margin:0 2%
+}
+
+
+
+/*start login section*/
+.login{
+    margin-top:10%;
+    margin-bottom:10%
+}
+
+.login .trust{
+    text-align: center;
+}
+
+.login .trust .trusted-by{
+    margin:6% 0;
+}
+
+/*the four trusted logos*/
+.login .trusted-partners{
+    position: relative;
+    min-height: 220px;
+    margin-top: 5%;
+}
+
+.login .trusted-partners .top-left-img{
+    position: absolute;
+    left: 20%;
+    top:0
+}
+
+.login .trusted-partners .top-right-img{
+    position: absolute;
+    right: 20%;
+    top:0
+}
+
+.login .trusted-partners .bottom-left-img{
+    position: absolute;
+    left: 20%;
+    bottom:5%;
+}
+
+.login .trusted-partners .bottom-right-img{
+    position: absolute;
+    right: 20%;
+    bottom:5%;
+}
+
+
+
+/*-----------*/
+
+
+.login .login-form .form-mask{
+    position: relative;
+    background-color: var(--light-purple);
+    height: 450px;
+    width:75%;
+    margin:0 auto;
+    border-radius: 5px;
+}
+
+.login .login-form .form-mask .my-form{
+    width: 80%;
+    padding:20px 35px;
+    background-color: #FFF;
+    position: absolute;
+    left:10%;
+    top:-15%;
+    border-radius:5px;
+    -webkit-box-shadow: 1px 0px 8px 2px rgba(161,150,161,0.68);
+    -moz-box-shadow: 1px 0px 8px 2px rgba(161,150,161,0.68);
+    box-shadow: 1px 0px 8px 2px rgba(161,150,161,0.68);
+}
+
+.login .login-form .form-mask .my-form .purple-button{
+    background-color:var(--dark-purple);
+    font-size: var(--heading-font);
+}
+
+
+.login .login-form .form-mask .my-form .google-login{
+    text-align: center;
+}
+
+.login .login-form .form-mask .my-form .google-login .or{
+    display: block;
+    margin:4% 0
+}
+
+.login .login-form .form-mask .my-form .google-login button i{
+    margin:0 5px
+}
+
+
+/*news letter input*/
+
+.nav-links{
+    margin-bottom:50px
+}
+
+.nav-links ul li a{
+    color:#000
+}
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+ 
+.input-wrapper::before {
+    content: "\f1d8";
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 100;
+    color: var(--dark-purple);
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    transition:all .3s ease-in-out
+}
+
+
+
+input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 2px solid #666;
+  border-radius:3px
+}
+
+/*--------------*/
+
+
+/*media query for login form*/
+
+
+
+@media(max-width:786px){
+
+    /*start navbar fixes*/
+    nav .nav-item{
+        font-size:1.3rem
+    }
+    
+
+    /*start intro speech fixes*/
+    .intro-speech h1{
+        font-size: 2.5rem;
+    }
+
+    .header-mask{
+        clip-path: none;
+    }
+
+    /*start features section fixes*/
+    .features h1{
+        font-size: 2.0rem;
+    }
+
+
+    /*start product teams label fixes*/
+    .product-teams .product-teams-intro .product-teams-label{
+        width:80%
+    }
+    .product-teams .product-teams-intro h1{
+        font-size:2.0rem
+    }
+
+    /*start engineering teams label fixes*/
+    .engineering-teams .engineering-teams-intro .engineering-teams-label{
+        width: 90%;
+    }
+
+    .engineering-teams .engineering-teams-intro h1{
+        font-size:2.0rem
+    }
+
+    
+    /*start testimonials and carousel's fixes*/
+
+    #carouselExampleFade .client-opinion{
+        margin-bottom: 2%;
+        padding: 0 10%;
+        font-size: 15px;
+        margin-top: 40px;
+    }
+
+    #carouselExampleFade img{
+        width: 30%;
+    }
+
+    #carouselExampleFade .client-name{
+        font-size:16px
+    }
+
+    .logos ul li{
+        margin:2% 5%
+    }
+
+    .logos ul li img{
+        width:75%
+    }
+
+    /*start trust section*/
+    .trust h1{
+        font-size: 2.0rem;
+    }
+
+    .login .trusted-partners{
+        min-height: 160px;
+        margin-bottom:40px
+    }
+    .login .trusted-partners .top-right-img{
+        right:10%
+    }
+    .login .trusted-partners .top-left-img{
+        left:10%
+    }
+
+    .login .trusted-partners .bottom-right-img{
+        right:10%
+    }
+
+    .login .trusted-partners .bottom-left-img{
+        left:10%
+    }
+
+    /*start login form fixes*/
+
+    
+    .login .login-form .form-mask .my-form{
+        left:0;
+        width: 100%;
+        padding: 20px 10px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:990px){
+    
+
+    
+
+    .login .trust{
+        margin-bottom:60px
+    }
+
+    .header-mask{
+        clip-path: none;
+    }
+}
+
+
+@media(max-width:1200px){
+    
+    .features .feat{
+        text-align:center
+    }
+
+    .login .trust .trusted-by{
+       width:80%
+    }
+   
+}
